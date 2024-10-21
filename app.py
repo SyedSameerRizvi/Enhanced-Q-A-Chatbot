@@ -41,7 +41,7 @@ temperature=st.sidebar.slider("Temperature",min_value=0.0,max_value=1.0,value=0.
 max_tokens = st.sidebar.slider("Max Tokens", min_value=50, max_value=300, value=150)
 
 ## MAin interface for user input
-st.write("Goe ahead and ask any question")
+st.write("Go ahead and ask any question")
 user_input=st.text_input("You:")
 
 if user_input and api_key:
@@ -49,7 +49,7 @@ if user_input and api_key:
     st.write(response)
 
 elif user_input:
-    st.warning("Please enter the OPen AI aPi Key in the sider bar")
+    st.warning("Please enter the Open AI API Key in the side bar")
 else:
     st.write("Please provide the user input")
 
